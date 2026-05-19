@@ -47,51 +47,51 @@ raw_branches = [
 branches = create_branch_objects(raw_branches)
 manager = BranchManager(branches)
 
-run_demo(manager)
+choice = input("Hello ! \n do you want run demo (1) or try it yourself(2)?")
 
-# WORKS !!!
-# while True:
-#     show_menu()
-#     choice = input("Choose an option (1-6): ")
+if choice == "1":
+    run_demo(manager)
+else:
+    while True:
+        show_menu()
+        choice = input("Choose an option (1-6): ")
 
-#     if choice == "1":
-#         print(manager.generate_report())
+        if choice == "1":
+            print(manager.generate_report())
 
-#     elif choice == "2":
-#         high_risk = manager.get_high_risk_branches()
-#         for branch in high_risk:
-#             print(branch.name)
+        elif choice == "2":
+            high_risk = manager.get_high_risk_branches()
+            for branch in high_risk:
+                print(branch.name)
 
-#     elif choice == "3":
-#         city = input("Enter city name: ")
-#         matches = manager.find_by_city(city)
-#         for branch in matches:
-#             print(branch.name)
+        elif choice == "3":
+            city = input("Enter city name: ")
+            matches = manager.find_by_city(city)
+            for branch in matches:
+                print(branch.name)
 
-#     elif choice == "4":
-#         print("Lets add new branch !\n")
-#         new_branch={
-#            "name":input("Enter branch name: "),
-#             "city": input("Enter city: "),
-#             "cups_sold": int(input("Enter cups sold: ")),
-#             "rating": float(input("Enter rating: ")),
-#             "complaints": int(input("Enter complaints: ")),
-#             "staff_count": int(input("Enter staff count: "))
-#         }
+        elif choice == "4":
+            print("Lets add new branch !\n")
+            new_branch={
+            "name":input("Enter branch name: "),
+                "city": input("Enter city: "),
+                "cups_sold": int(input("Enter cups sold: ")),
+                "rating": float(input("Enter rating: ")),
+                "complaints": int(input("Enter complaints: ")),
+                "staff_count": int(input("Enter staff count: "))
+            }
 
-#            manager.add_branch(new_branch)
-#         else:
-#           print("INVALID branch data- Branch not added")
+            manager.add_branch(new_branch)
 
-#     elif choice == "5":
-#         file_name = input("Enter file name: ")
-#         print(manager.save_report(file_name))
-    
-#     elif choice == "6":
-#         print("See you later !")
-#         break
+        elif choice == "5":
+            file_name = input("Enter file name: ")
+            print(manager.save_report(file_name))
+        
+        elif choice == "6":
+            print("See you later !")
+            break
 
-#     else:
-#         print("INVALID choice, try again")
+        else:
+            print("INVALID choice, try again")
 
 
