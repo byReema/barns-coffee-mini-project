@@ -79,17 +79,7 @@ run_demo(manager)
 #             "staff_count": int(input("Enter staff count: "))
 #         }
 
-#         if validate_branch_data(new_branch):
-#             branch = Branch(
-#               new_branch["name"],
-#               new_branch["city"],
-#               new_branch["cups_sold"],
-#               new_branch["rating"],
-#               new_branch["complaints"],
-#               new_branch["staff_count"]
-#             )
-#             manager.branches.append(branch)
-#             print("Branch added successfully.")
+#            manager.add_branch(new_branch)
 #         else:
 #           print("INVALID branch data- Branch not added")
 

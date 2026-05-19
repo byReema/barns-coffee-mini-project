@@ -1,0 +1,84 @@
+Barn's Branch Performance Report
+================================
+
+Branch Details
+==============
+
+Branch: Barn's Tahlia
+City: Jeddah
+Cups Sold: 420
+Rating: 4.7
+Complaints: 2
+Staff Count: 8
+Sales Category: Strong Sales
+Risk Level: Low
+Cups per Staff: 52.5
+Advice: Top branch. Study what this branch is doing well.
+****************************************
+Branch: Barn's Corniche
+City: Jeddah
+Cups Sold: 380
+Rating: 4.5
+Complaints: 4
+Staff Count: 7
+Sales Category: Average Sales
+Risk Level: Medium
+Cups per Staff: 54.285714285714285
+Advice: Monitor performance and keep improving service quality.
+****************************************
+Branch: Barn's Olaya
+City: Riyadh
+Cups Sold: 510
+Rating: 4.8
+Complaints: 1
+Staff Count: 9
+Sales Category: Excellent Sales
+Risk Level: Low
+Cups per Staff: 56.666666666666664
+Advice: Top branch. Study what this branch is doing well.
+****************************************
+Branch: Barn's Khobar
+City: Khobar
+Cups Sold: 290
+Rating: 4.1
+Complaints: 7
+Staff Count: 6
+Sales Category: Needs Sales Support
+Risk Level: High
+Cups per Staff: 48.333333333333336
+Advice: Visit this branch and review customer complaints.
+****************************************
+Branch: Barn's Makkah Road
+City: Makkah
+Cups Sold: 350
+Rating: 4.3
+Complaints: 5
+Staff Count: 7
+Sales Category: Average Sales
+Risk Level: Medium
+Cups per Staff: 50.0
+Advice: Monitor performance and keep improving service quality.
+****************************************
+Branch: Barn's Medina
+City: Qassim
+Cups Sold: 550
+Rating: 4.9
+Complaints: 2
+Staff Count: 7
+Sales Category: Excellent Sales
+Risk Level: Low
+Cups per Staff: 78.57142857142857
+Advice: Top branch. Study what this branch is doing well.
+****************************************
+
+**Company Summary**
+===============
+Total Branches: 6
+Average Cups Sold: 416.67
+Average Rating: 4.55
+Total Complaints: 21
+Top Selling Branch: Barn's Medina -> 550 cups
+Lowest Selling Branch: Barn's Khobar -> 290 cups
+Best Rated Branch: Barn's Medina -> 4.9
+Risk Summary: {'High': 1, 'Medium': 2, 'Low': 3}
+Business Insight: The branches are performing strongly overall.

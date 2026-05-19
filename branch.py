@@ -232,6 +232,22 @@ class BranchManager:
 
         return report
     
+    def add_branch(self, branch_data):
+        if not validate_branch_data(branch_data):
+            return "Invalid branch data"
+
+        branch = Branch(
+            branch_data["name"],
+            branch_data["city"],
+            branch_data["cups_sold"],
+            branch_data["rating"],
+            branch_data["complaints"],
+            branch_data["staff_count"]
+        )
+
+        self.branches.append(branch)
+        return "Branch added successfully"
+    
     def save_report(self, file_name):
       filename = f"{file_name.lower().replace(' ', '_')}_report.txt"
 
@@ -264,27 +280,16 @@ def run_demo(manager):
         print(branch.name)
     print()
 
-    # Step 4 :Add Medina branch
+    # Step 4 :Add Qassim branch
     new_branch = {
         "name": "Barn's Medina",
-        "city": "Medina",
-        "cups_sold": 380,
-        "rating": 4.6,
+        "city": "Qassim",
+        "cups_sold": 550,
+        "rating": 4.9,
         "complaints": 2,
         "staff_count": 7
     }
-
-    if validate_branch_data(new_branch):
-        branch_obj = Branch(
-            new_branch["name"],
-            new_branch["city"],
-            new_branch["cups_sold"],
-            new_branch["rating"],
-            new_branch["complaints"],
-            new_branch["staff_count"]
-        )
-        manager.branches.append(branch_obj)
-        print("Medina branch added.")
+    print(manager.add_branch(new_branch))
     print()
 
     # Step 5 :Print updated total branches
