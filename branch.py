@@ -234,7 +234,7 @@ class BranchManager:
     
     def add_branch(self, branch_data):
         if not validate_branch_data(branch_data):
-            return "Invalid branch data"
+            return "INVALID branch data- Branch not added"
 
         branch = Branch(
             branch_data["name"],
